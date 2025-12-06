@@ -1,14 +1,14 @@
 --=============================================================================
---   CALL OF DUTY: BLACK OPS COLD WAR
+--   ARC9 CALL OF DUTY: BLACK OPS COLD WAR
+--   ASSAULT RIFLES
 --   XM4
---   LUA - MAIN
 --=============================================================================
 --[[
 --   SWEP INFORMATION:
 
 --   BASE  : ARC-9
---   BUILD : v1.0
---   SR.NO : 133108
+--   BUILD : v2025.12
+--   SR.NO : IL022846
 
 
 ooooooo  ooooo ooo        ooooo       .o   
@@ -753,6 +753,22 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
 }
+--=========================================================
+-- CUSTOM SLOT INSERTION
+local CustomSlotCvar = GetConVar("arc9_bocw_customslot")
+local CustomSlotTable = {
+    PrintName = "Custom Slot",
+    Bone = "tag_weapon",
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(0, 0, 0),
+    Icon_Offset = Vector(-7, 0, 3.6),
+    Category = {"bocw_custom_slot", "bocw_custom_slot_xm4"},
+}
+
+if CustomSlotCvar:GetBool() then
+    table.insert(SWEP.Attachments, CustomSlotTable)
+end
+--=========================================================
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
