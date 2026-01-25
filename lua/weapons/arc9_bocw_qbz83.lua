@@ -229,14 +229,14 @@ SWEP.NPCWeight = 50
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.3 -- How much the gun sways.
+SWEP.Sway = 0.5 -- How much the gun sways.
+SWEP.SwayMultHipFire = 0 -- How much the gun sways.
+SWEP.SwayMultSights = 0.2
 
 SWEP.HoldBreathTime = 5 -- time that you can hold breath for
 SWEP.RestoreBreathTime = 4
 
 SWEP.FreeAimRadiusSights = 0
-
-SWEP.SwayMultSights = 0.5
 
 SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
