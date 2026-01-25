@@ -7,8 +7,8 @@
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
---   BUILD : v2025.12
---   SR.NO : K 050694
+--   BUILD : v2026.1
+--   SR.NO : K050694
 
 
 oooo    oooo           o8o                    .ooo   
@@ -684,12 +684,8 @@ SWEP.Attachments = {
         Category = {"bocw_krig6_sound"},
     },
     {
-        PrintName = "Cosmetic",
         DefaultCompactName = "CAMO",
         DefaultIcon = Material("arc9/def_att_icons/skin.png"),
-        Bone = "tag_weapon",
-        Pos = Vector(3, 0, -1),
-        Ang = Angle(0, 0, 0),
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
@@ -715,15 +711,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-
-
-    local camo = 0
-    if attached["universal_camo"] then
-        camo = 1
-    end
-
-    vm:SetSkin(camo)
-
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
