@@ -36,16 +36,16 @@ SWEP.PrintName = "AK-47"
 SWEP.TrueName = "AK-47"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-     Manufacturer = "Kalashnikov Concern",
-     Calibre = "7.62x39mm",
-     Mechanism = "Gas Operated, Closed rotating bolt",
-     Country = "Soviet Union",
-     Year = 1976
+    Manufacturer = "Kalashnikov Concern",
+    Calibre = "7.62x39mm",
+    Mechanism = "Gas Operated, Closed rotating bolt",
+    Country = "Soviet Union",
+    Year = 1976
 }
 
 SWEP.Credits = {
-     Author = "multinett",
-     --Contact = "https://steamcommunity.com/id/multinett/"
+    Author = "multinett",
+    --Contact = "https://steamcommunity.com/id/multinett/"
 }
 
 SWEP.Description = [[Full-auto assault rifle. High damage with a marginally slower fire rate. Excellent stopping power for mid to short range encounters.
@@ -420,7 +420,7 @@ SWEP.HolsterAng = Angle(0, -15, 25)
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(15.5, 38, 4)
+SWEP.CustomizePos = Vector(15.5, 38, 4.5)
 SWEP.CustomizeRotateAnchor = Vector(17, -1.88, -5)
 
 SWEP.CustomizeSnapshotFOV = 70
@@ -798,7 +798,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(4.6, 0, 4),
+        Icon_Offset = Vector(6, 0, 4),
         DefaultIcon = Material("entities/bocw_atts/other/ak47_receiver2.png", "mips smooth"),
         UnInstalledElements = {"receiver_ak47"},
         Category = {"bocw_ak47_receiver"},
@@ -814,12 +814,12 @@ SWEP.Attachments = {
         Category = {"bocw_ak47_grip"},
     },
     {
-        PrintName = "AK-47 STOCK",
+        PrintName = "STOCK",
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         DefaultIcon = Material("arc9/def_att_icons/stock_ak.png", "mips smooth"),
-        Icon_Offset = Vector(-6, 0, 2.75),
+        Icon_Offset = Vector(-2, 0, 2.75),
         Category = {"bocw_ak47_stock"},
     },
     {
@@ -827,7 +827,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(-0.25, 0, -0.5),
         Category = {"bocw_ak47_wrap"},
     },
     {
@@ -868,12 +868,8 @@ SWEP.Attachments = {
         Category = {"bocw_ak47_sound"},
     },
     {
-        PrintName = "Cosmetic",
         DefaultCompactName = "CAMO",
         DefaultIcon = Material("arc9/def_att_icons/skin.png"),
-        Bone = "tag_weapon",
-        Pos = Vector(3, 0, -1),
-        Ang = Angle(0, 0, 0),
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
@@ -899,14 +895,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-
-    local camo = 0
-    if attached["universal_camo"] then
-        camo = 1
-    end
-
-    vm:SetSkin(camo)
-
 end
 
 SWEP.HookP_NameChange = function(self, name)
