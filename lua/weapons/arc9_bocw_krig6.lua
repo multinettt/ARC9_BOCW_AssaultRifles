@@ -338,6 +338,9 @@ SWEP.CamQCA = 3
 
 --SWEP.DoFireAnimation = true
 
+SWEP.FireInterruptInspect = true
+SWEP.SightsInterruptInspect = true
+
 SWEP.NoViewBob = false
 
 -------------------------- VISUALS
@@ -638,7 +641,7 @@ SWEP.Attachments = {
         Pos = Vector(15.5, 0.775, 4.05),
         Ang = Angle(0, 0, -112),
         Icon_Offset = Vector(0, 0, -0.25),
-        Category = {"bocw_xm4_body", "bocw_body_mount_flashlight"},
+        Category = {"bocw_krig6_body", "bocw_body_mount_flashlight"},
         InstalledElements = {"foregripgone"},
     },
     {
@@ -676,17 +679,68 @@ SWEP.Attachments = {
         Category = {"bocw_krig6_wrap"},
     },
     {
+        DefaultCompactName = "CAMO",
+        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 1",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker1.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 2",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker2.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 3",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker3.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker4.mdl",
+        CosmeticOnly = true,
+        ExcludeElements = {"bocw_krig6_magazine_ext1", "bocw_krig6_magazine_extpro", "krig6_mag_dual"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker4_ext.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_krig6_magazine_ext1"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker4_extpro.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_krig6_magazine_extpro"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_krig6_sticker4_dual.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"krig6_mag_dual"}
+    },
+    {
         PrintName = "SOUND",
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(30, 0, 3.4),
         Category = {"bocw_krig6_sound"},
-    },
-    {
-        DefaultCompactName = "CAMO",
-        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
-        Category = {"universal_camo"},
         CosmeticOnly = true,
     },
 }

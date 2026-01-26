@@ -341,6 +341,9 @@ SWEP.CamQCA = 3
 
 --SWEP.DoFireAnimation = true
 
+SWEP.FireInterruptInspect = true
+SWEP.SightsInterruptInspect = true
+
 SWEP.NoViewBob = false
 
 -------------------------- VISUALS
@@ -860,17 +863,74 @@ SWEP.Attachments = {
         MergeSlots = {4,16}
     },
     {
+        DefaultCompactName = "CAMO",
+        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 1",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker1.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_ak47_receiver_akm"},
+        ExcludeElements = {"bocw_ak47_receiver_type56"},
+    },
+    {
+        PrintName = "STICKER 2",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker2.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_ak47_receiver_akm"},
+        ExcludeElements = {"bocw_ak47_receiver_type56"},
+    },
+    {
+        PrintName = "STICKER 3",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker3.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_ak47_receiver_akm"},
+        ExcludeElements = {"bocw_ak47_receiver_type56"},
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker4.mdl",
+        CosmeticOnly = true,
+        ExcludeElements = {"bocw_ak47_magazine_ext1", "bocw_ak47_magazine_extpro", "ak47_mag_dual", "bocw_ak47_magazine_type56"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker4_ext.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_ak47_magazine_ext1"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker4_extpro.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"bocw_ak47_magazine_extpro"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_ak47_sticker4_dual.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"ak47_mag_dual"}
+    },
+    {
         PrintName = "SOUND",
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(28, 0, 3.4),
         Category = {"bocw_ak47_sound"},
-    },
-    {
-        DefaultCompactName = "CAMO",
-        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
-        Category = {"universal_camo"},
         CosmeticOnly = true,
     },
 }

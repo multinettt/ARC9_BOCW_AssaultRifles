@@ -338,6 +338,9 @@ SWEP.CamQCA = 3
 
 --SWEP.DoFireAnimation = true
 
+SWEP.FireInterruptInspect = true
+SWEP.SightsInterruptInspect = true
+
 SWEP.NoViewBob = false
 
 -------------------------- VISUALS
@@ -657,17 +660,68 @@ SWEP.Attachments = {
         Category = {"bocw_qbz83_wrap"},
     },
     {
+        DefaultCompactName = "CAMO",
+        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 1",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker1.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 2",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker2.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 3",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker3.mdl",
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker4.mdl",
+        CosmeticOnly = true,
+        ExcludeElements = {"qbz83_mag_ext", "qbz83_mag_dual", "qbz83_mag_mix"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker4_ext.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"qbz83_mag_ext"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker4_dual.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"qbz83_mag_dual"}
+    },
+    {
+        PrintName = "STICKER 4",
+        Bone = "tag_clip",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_qbz83_sticker4_mix.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"qbz83_mag_mix"}
+    },
+    {
         PrintName = "SOUND",
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(19.5, 0, 2.6),
         Category = {"bocw_qbz83_sound"},
-    },
-    {
-        DefaultCompactName = "CAMO",
-        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
-        Category = {"universal_camo"},
         CosmeticOnly = true,
     },
 }

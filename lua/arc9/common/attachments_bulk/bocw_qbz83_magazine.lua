@@ -96,7 +96,7 @@ ATT.Category = "bocw_qbz83_mag"
 ATT.Model = "models/weapons/arc9/atts/bocw_qbz83_magazine_extpro.mdl"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, -0.2)
+ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.ClipSizeOverride = 50
