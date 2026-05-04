@@ -602,13 +602,13 @@ SWEP.AttachmentSlotMods = {
 -- Adjust the stats of specific attachments when applied to this gun
 SWEP.AttachmentTableOverrides = {
     ["bocw_optic_visiontech2x"] = {
-        VisualRecoil = 0.2
+        VisualRecoil = 0.3
     },
     ["bocw_optic_anpvs4thermal"] = {
-        VisualRecoil = 0.2
+        VisualRecoil = 0.3
     },
     ["bocw_optic_axialarms3x"] = {
-        VisualRecoil = 0.2
+        VisualRecoil = 0.3
     },
     ["bocw_optic_hangmanrf"] = {
         VisualRecoil = 0.2
@@ -640,7 +640,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"optic_picatinny"},
-        CorrectiveAng = Angle(-4.1, -1.08, 0),
+        CorrectiveAng = Angle(-4.18, -1.24, 0),
         InstalledElements = {"optic_mount"},
     },
     {
